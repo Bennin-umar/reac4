@@ -6,7 +6,7 @@ function Header() {
   return (
     <Navbar className="bg-success nav-expand">
       <Container>
-        <Navbar.Brand><h1>TD$J</h1></Navbar.Brand>
+        <Navbar.Brand><h1>DE GAME LOURD SITE</h1></Navbar.Brand>
         <Nav>
           <Nav.Item>
             <Link to="/trainees" className="nav-link">TRAINEES</Link>
