@@ -1,6 +1,6 @@
 import axios from "axios";
 import { createContext, useReducer } from "react";
-import userReducer from "../reducers/usersReducer";
+import userReducer from "../reducers/userReducer";
 
 const initialState = {
   isPending: true,
