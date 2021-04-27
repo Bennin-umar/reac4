@@ -7,6 +7,7 @@ function Trainees() {
   const { loading, trainees, getTrainees } = useContext(TraineesContext);
   useEffect(() => {
     getTrainees();
+     // eslint-disable-next-line
   }, []);
   return (
     <section>
