@@ -35,6 +35,11 @@ const UsersContextProvider = ({ children }) => {
   // register
 
   async function registerUser(newuser) {
+     const config = {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
     const data = await axios.post(
       "ttps://traineesapi-dodoo.herokuapp.com/api/v1/users/login",
       newuser,
@@ -44,11 +49,7 @@ const UsersContextProvider = ({ children }) => {
       type: "REGISTER_USER",
       payload: data,
     })
-    // const config = {
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    // };
+   
     console.log(data);
   }
 
